@@ -42,7 +42,6 @@ def add_expense():
         conn.close()
         return redirect(url_for('index'))
     return render_template('add_expense.html')
-
 if __name__ == "__main__":
     init_db()
     app.run(debug=True)
