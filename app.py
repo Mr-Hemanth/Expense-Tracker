@@ -30,6 +30,7 @@ def index():
 
 
 @app.route('/add', methods=['GET', 'POST'])
+
 def add_expense():
     if request.method == 'POST':
         title = request.form['title']
