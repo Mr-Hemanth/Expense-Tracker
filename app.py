@@ -27,6 +27,7 @@ def index():
     conn.close()
     return render_template('index.html', expenses=expenses)
 
+
 @app.route('/add', methods=['GET', 'POST'])
 
 def add_expense():
