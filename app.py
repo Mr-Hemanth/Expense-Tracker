@@ -18,7 +18,6 @@ def init_db():
     conn.close()
 @app.route('/')
 
-
 def index():
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
